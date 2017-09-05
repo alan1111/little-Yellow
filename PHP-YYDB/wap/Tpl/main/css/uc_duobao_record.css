@@ -1,0 +1,203 @@
+.slider-nav ul{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display: flex;
+	-webkit-align-items:center;
+	align-items:center;
+	-webkit-box-align: center;
+}
+.slider-nav ul .nav-item{
+	background: #fff;
+	-webkit-flex:1;
+	-webkit-box-flex:1;  
+	flex:1;
+}
+.slider-nav ul .nav-item a {
+    line-height:1.5rem;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+    font-size: .56rem;
+    color: #555;
+}
+.slider-nav ul .nav-item .cur{
+	border-bottom-color: #d93a55;
+}
+.prl{
+	position: relative;
+}
+.prl:after,.dbdeatailtit:after,.dbtimelist li:after{
+	content: "";
+    display: block;
+    height:0;
+    width:100%;
+    clear: both;
+}
+.dblist{
+	position: relative;
+	border-bottom: 1px solid #f0f0f0;
+	background: #fff;
+	padding: .5rem .5rem;
+	line-height:1rem;
+	font-size: .56rem;
+	color: #555;
+}
+.dblist .dblistimg{
+	position: absolute;
+	left: .5rem;
+	top:.8rem;
+	z-index: 1;
+	width: 3rem;
+	height: 3rem;
+	overflow: hidden;
+}
+.dblist .dblistimg img{
+	width: 100%;
+}
+.dblist .dblistmain{
+	padding-left: 3.5rem;
+}
+
+.dblistmain a.tit{
+	color: #333;
+    line-height:.8rem;
+    font-size: .6rem;
+    padding-bottom: .15rem;
+    display: block;
+    color: #222;
+}
+.dblistmain .lable{
+    font-size: .5rem;
+    padding-right: .4rem;
+    color: #999
+}
+.dblistmain .tacked{
+	position: absolute;
+	right: 0;
+	top: .3rem;
+	display: inline-block;
+	text-align: center;
+    white-space: nowrap;
+    font-size:.5rem;
+    vertical-align: middle;
+    color: #fff;
+    border-width: 0;
+    border-style: solid;
+    padding: 0 .2rem;
+    height:1rem;
+    line-height: 1rem;
+    border-radius: .2rem;
+    cursor: pointer;
+    background: #db3652;
+    border-color: #b6243d;
+    z-index: 3;
+}
+a.lookno,
+.lable em,
+.mline span{
+	color: #3273c3;
+}
+.partake em,
+.mline em{
+	color: #d82020;
+}
+.dblistmain .announce{
+	background: #f6f6f6;
+	margin-top: .3rem;
+	padding: .3rem 0; 
+}
+.dblistmain .announce .mline{
+	padding-left: .5rem;
+}
+.progressBar{
+	width: 70%;
+	height: .26rem;
+	background: #f1f1f1;
+	overflow: hidden;
+	border-radius: .13rem;
+}
+.progressBar span{
+	float: left;
+	height: .26rem;
+	background: #feb123;
+	overflow: hidden;
+	border-radius: .13rem;
+}
+
+/*进行中*/
+.dblist.inprogress .announce{
+	 display: none; 
+}
+.dblist.inprogress{
+
+}
+/*结束*/
+.dblist.finish .progressBar,
+.dblist.finish .tacked,
+.dblist.finish .surplus{
+	display: none;
+}
+
+/*-----------------夺宝详情------------------*/
+.dbdeatail{
+	padding: .3rem .5rem;
+	line-height: .8rem;
+}
+.dbdeatail a.tit{
+	line-height: .8rem;
+    font-size: .63rem;
+    padding-bottom: .15rem;
+    display: block;
+    color: #222;
+}
+.dbdeatail .lable em,.times em{
+	color: #d82020;
+}
+.dbdeatailtit{
+	padding:0 .5rem;
+	height: 1.6rem;
+	line-height: 1.6rem;
+	background: #fff;
+	border-bottom: 1px solid #f0f0f0;
+	font-size: .6rem;
+}
+.dbdeatailcon{
+	border-top: 1px solid #f0f0f0;
+	min-height: 5rem;
+	background: #fff;
+}
+.dbdeatailcon,
+.dbtimelist,.dbtimelist li{
+width: 100%;
+position: relative;
+}
+.dbtimel{
+	float: left;
+	font-size: .5rem;
+}
+.dbtimer{
+	float: right;
+	text-align: right;
+}
+.dbtimer .times{
+	padding-bottom: .1rem;
+}
+.dbtimelist li{
+	padding:.5rem .5rem;
+	line-height: .8rem;
+	font-size: .6rem;
+	border-top: 1px solid #f0f0f0;
+}
+.dbtimelist li:first-child{
+	border-top:none;
+}
+/*-------------夺宝号码页------------*/
+.mynum{
+	line-height: .8rem;
+	padding: .3rem 0;
+}
+.mynum span{
+	padding: 0 .3rem;
+}

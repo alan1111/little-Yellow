@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- Mobile Devices Support @begin -->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="false" name="twcClient" id="twcClient">
+<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+<meta content="no-cache" http-equiv="pragma">
+<meta content="0" http-equiv="expires">
+<!--允许全屏模式-->
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<!--指定sari的样式-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta content="telephone=no" name="format-detection" />
+<!-- Mobile Devices Support @end -->
+<title>{$data.page_title}</title>
+<script type="text/javascript">
+	var APP_ROOT = '{$APP_ROOT}';
+	var LOADER_IMG = '{$TMPL}/images/loader_img.gif';
+	var LOADING_IMG = '{$TMPL}/images/loading.gif';
+	var AJAX_URL = '{url x="index" r="ajax"}';
+	var PAGE_TYPE = '{$PAGE_TYPE}';
+
+</script>
+<link rel="stylesheet" type="text/css" href="{function name="parse_css" v="$pagecss"}" />
+<script type="text/javascript" src="{function name="parse_script" v="$pagejs" c="$cpagejs"}"></script>
+<script>
+/*app 请求时候用到*/
+$(function(){
+	{if $PAGE_TYPE eq 'app'}
+	App.page_title('{$data.page_title}');
+
+	if($(".hide_list")){
+		$(".hide_list").addClass("page_type_app");
+	}
+	{/if}
+
+	//后退
+	$('#header_back_btn').click(function(){
+		var Expression=/http(s)?:\/\/?/;
+		var objExp=new RegExp(Expression);
+		var backurl = $(this).attr('backurl');
+		$(this).attr('backurl','-1');
+
+		if(objExp.test(backurl)==true){
+			location.href = backurl;
+		}else{
+			window.history.go(-1);
+		}
+	});
+});
+</script>
+
+</head>
+<body>
+{if $PAGE_TYPE eq 'app'}
+
+{else}
+<header class="header-wrapper close">
+	<div class="header-wrap">
+	<a class="search-btn" href="{url a="index" r="search#index"}">
+		<img src="{$TMPL}/images/index/saoma.png" alt="" />
+	</a>
+	<div class="title">谷创商城夺宝</div>
+	<a class="user-center-link z-nav-down">
+                 <img src="{$TMPL}/images/index/search.png" alt="" />
+	</a>
+	</div>
+</header>
+<div class="container" style="height: 200px;margin-top: -2rem;">
+        <!-- 轮播图开始-->
+        <div class="slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="{$TMPL}/css/DB-head/images/h01.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="{$TMPL}/css/DB-head/images/h02.jpg" alt="" />
+                    </a>
+                </div>
+                 <div class="swiper-slide">
+                    <a href="#">
+                        <img src="{$TMPL}/css/DB-head/images/h03.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="pagination"></div>
+        </div>
+        <!-- 轮播图结束-->
+    </div>
+    <style type="text/css">
+/*轮播图部分*/
+.slide {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    /*margin-top:1rem;*/
+}
+
+.slide h2 {
+    background: #fff;
+    font-size: 14px;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    color: #777;
+    padding-left: 15px;
+}
+
+.slide h2 a {
+    float: right;
+}
+
+.slide .swiper-slide {
+    width: 100%;
+    text-align: center;
+    height:200px;
+}
+
+.slide .swiper-slide img {
+    width: 100%;
+    height:200px;
+}
+
+.slide .pagination {
+    position: absolute;
+    z-index: 20;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    right: 0;
+}
+
+.slide .swiper-pagination-bullet {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    background: #ccc;
+    margin: 0 2px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.slide .swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+    </style>
+<script type="text/javascript">
+$(document).ready(function() {
+    search();
+    //初始化swiper插件
+    var mySwiper = new Swiper('.slide', {
+        autoplay: 5000,
+        visibilityFullFit: true,
+        loop: true,
+        pagination: '.pagination'
+    });
+
+    function search(){
+        /*
+         * 1.颜色随着 页面的滚动  逐渐加深
+         * 2.当我们超过  轮播图的  时候  颜色保持不变
+         * */
+        /*获取搜索盒子*/
+        var searchBox = document.querySelector('.header-wrap');
+        /*获取banner盒子*/
+        var bannerBox = document.querySelector('.slide');
+        /*获取高度*/
+        var h = bannerBox.offsetHeight;
+        /*监听window的滚动事件*/
+        window.onscroll = function(){
+            /*不断的获取离顶部的距离*/
+            var top = document.body.scrollTop;
+            var opacity = 0;
+            if( top < h){
+                /*1.颜色随着 页面的滚动  逐渐加深*/
+                opacity = top/h * 0.85
+            }else{
+                /*2.当我们超过  轮播图的  时候  颜色保持不变*/
+                opacity = 1
+            }
+
+            /*把透明度设置上去*/
+            searchBox.style.background = "rgba(217,58,85,"+opacity+")";
+
+        }
+    }
+});
+
+</script>
+{/if}
+{include file="inc/wx_share.html"}

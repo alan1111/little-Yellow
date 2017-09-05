@@ -1,0 +1,123 @@
+/*样式重置*/
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    list-style:none;
+    text-decoration:none;
+    outline: none;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, button, textarea, p, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 100%;
+    min-width: 320px;
+    font:14px  Helvetica Neue,Helvetica,sans-serif,"Microsoft yahei",Arial;
+    background: #F7F7F7;
+    font-size: 100%;
+}
+
+/* End hide from IE Mac */
+
+a {
+    text-decoration: none;
+    color: #333333
+}
+
+.lt{
+    float: left;
+}
+
+.rf{
+    float:right;
+}
+
+
+fieldset, img {
+    border: 0;
+}
+/*夺宝头部*/
+.list_head{
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    position: fixed;
+    top:0;
+    z-index: 100;
+    background:transparent;
+    text-align: center;
+    color: #fff;
+}
+
+.icon-angle-left,.icon-search{
+    color: #fff;
+    padding-left:5px;
+}
+
+.icon-search{
+    padding-top:5px;
+}
+
+.list_head a{
+    display: inline-block;
+    margin: 4px 10px 0 0;
+}
+
+/*轮播图部分*/
+.slide {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    /*margin-top:1rem;*/
+}
+
+.slide h2 {
+    background: #fff;
+    font-size: 14px;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    color: #777;
+    padding-left: 15px;
+}
+
+.slide h2 a {
+    float: right;
+}
+
+.slide .swiper-slide {
+    width: 100%;
+    text-align: center;
+    height:200px;
+}
+
+.slide .swiper-slide img {
+    width: 100%;
+    height:200px;
+}
+
+.slide .pagination {
+    position: absolute;
+    z-index: 20;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    right: 0;
+}
+
+.slide .swiper-pagination-bullet {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    background: #ccc;
+    margin: 0 2px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.slide .swiper-pagination-bullet-active {
+    background: #fff;
+}

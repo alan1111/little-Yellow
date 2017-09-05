@@ -1,0 +1,55 @@
+.process_head{
+	background-position:0 -116px;
+}
+.message{
+	width: 450px;
+	margin: 0 auto;
+	padding: 40px 0 60px 60px;
+	position: relative;
+	zoom: 1;
+}
+.message .suc-ico{
+	position: absolute;
+	left: 0;
+	top: 40px;
+}
+.message .title{
+	font-size: 18px;
+	font-weight: bold;
+	color: #3C3C3C;
+	line-height: 48px;
+	margin-bottom: 10px;
+	white-space: nowrap;
+}
+.message .tips{
+	color: #808080;
+	line-height: 25px;
+	font-size:13px;
+}
+table{
+	margin-bottom: 10px;
+	width: 100%;
+	table-layout: fixed;
+	text-align: left;
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+}
+table thead tr{
+	background: #f2f2f2;
+}
+table thead th{
+	font-size: 14px;
+	color: #808080;
+	padding: 8px 15px;
+	font-weight: normal;
+}
+table tbody td{
+	font-size:13px;
+	padding: 20px;
+	border-bottom: 1px solid #ddd;
+	font-weight: normal;
+}
+table tbody td li{
+	width: 80px;
+	float: left;
+}

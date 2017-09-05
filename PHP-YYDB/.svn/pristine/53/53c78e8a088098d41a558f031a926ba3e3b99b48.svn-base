@@ -1,0 +1,29 @@
+{foreach from=$index_duobao_list item=item  key=key}
+<li class="tuan_li split-line">
+     <a class="blw" href="{url a="index" r="duobao#index" p="data_id=$item.id"}">
+      <div class="pic">
+            {if $item.min_buy eq 10}
+        <div class="tenyen"></div>
+                            {/if}
+                         {if $item.unit_price eq 100}
+        <div class="hundredyen"></div>
+                            {/if}
+        <img src="{$item.icon}" lazy="true" />
+       </div>
+     </a>
+     <div class="info">
+      <div class="info-tit">
+      {$item.name}
+      </div>
+
+
+      <div class="progress-box">
+        <div class="left-box">
+          <div class="progress-info">开奖进度<span>{$item.progress}%</span></div>
+          <progress max="{$item.max_buy}" value="{$item.current_buy}"></progress>
+        </div>
+        <a class="right-box add_cart_item" buy_num="{$item.min_buy}" data_id="{$item.id}" rel="{$item.icon}" onclick="add_cart(this)">加入清单</a>
+                    </div>
+     </div>
+</li>
+{/foreach}

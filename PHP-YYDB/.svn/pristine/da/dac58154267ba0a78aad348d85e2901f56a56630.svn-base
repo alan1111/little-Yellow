@@ -1,0 +1,46 @@
+<?php
+$this->_var['pagecss'][] = $this->_var['TMPL_REAL']."/css/public.css";
+$this->_var['pagecss'][] = $this->_var['TMPL_REAL']."/css/style.css";
+$this->_var['pagecss'][] = $this->_var['TMPL_REAL']."/css/color.css";
+$this->_var['pagecss'][] = $this->_var['TMPL_REAL']."/css/payment.css";
+$this->_var['pagecss'][] = $this->_var['TMPL_REAL']."/css/user_login.css";
+
+$this->_var['pagejs'][] = $this->_var['TMPL_REAL']."/js/utils/jquery-1.6.2.min.js";
+$this->_var['pagejs'][] = $this->_var['TMPL_REAL']."/js/utils/jquery.bgiframe.js";
+$this->_var['pagejs'][] = $this->_var['TMPL_REAL']."/js/utils/jquery.timer.js";
+$this->_var['pagejs'][] = $this->_var['TMPL_REAL']."/js/utils/jquery.weebox.js";
+$this->_var['pagejs'][] = $this->_var['TMPL_REAL']."/js/utils/jquery.touchwipe.js";
+
+$this->_var['pagejs'][] = $this->_var['TMPL_REAL']."/js/fanwe_utils/fanweUI.js";
+$this->_var['cpagejs'][] = $this->_var['TMPL_REAL']."/js/fanwe_utils/fanweUI.js";
+$this->_var['pagejs'][] = $this->_var['TMPL_REAL']."/js/utils/fastclick.js";
+$this->_var['pagejs'][] = $this->_var['TMPL_REAL']."/js/script.js";
+$this->_var['cpagejs'][] = $this->_var['TMPL_REAL']."/js/script.js";
+
+
+
+?>
+{include file="inc/header_title_home.html"}
+
+<div class="pay_order_index">
+<div class="pay_info">
+		<div class="h font-fc8">订单编号：{$data.order_sn}</div>
+	
+</div>
+
+{if $data.pay_status eq 1}
+ 		<div class="btn_login">
+    <a href="{url x="index" r="uc_duobao_record#index"}" p="&pay_status=1">
+    	<input type="submit" value="{$data.pay_info}">
+			</a>
+	</div>
+{else}
+<form id="form" onsubmit="return check_form();" method="post" action="{url x="index" r="cart#order" p="id=$data.order_id"}">
+    <div class="btn_login">
+    	<input id="input_submit" type="submit" value="{$data.pay_info}，继续付款">
+	</div>
+    </form>
+{/if}
+</div>
+
+{include file="inc/footer_index.html"}

@@ -1,0 +1,10 @@
+详细安装说明请参考：
+http://www.haoid.cn/post/639
+
+http://127.0.0.1:8181/test1/wap/index.php?order=progress&show_prog=1 手机首页
+
+http://127.0.0.1:8181/test1/m.php?m=Public&a=login& 后台
+
+http://127.0.0.1:8181/test1/   首页
+
+http://localhost:8181/phpmyadmin  admin admin

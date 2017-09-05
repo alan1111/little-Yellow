@@ -1,0 +1,21 @@
+			<!--用户信息部分-->
+					<div class="goods_abbr">
+						<a href="{url x="index" r="uc_account#index"}">
+						  <div class="person_account">
+							   <div class="account_info">
+							   	    <div class="pic">
+							   	    	<img src="{function name="get_user_avatar" uid=$data.uid type="middle"}" data-id="{$data.uid}" width="100%" height="100%"> 
+							   	    </div>
+									<div class="name">
+										<h1>{$data.user_name}</h1>
+										<p> 账户通宝:<span>{$data.points_amount}</span></p>
+									</div>
+							   </div>
+						  </div>
+						</a>
+						<!-- <div class="uc-money-box">
+							<div class="uc-money-item">通宝：<font class="money-font">{$data.user_money_int}</font></div>
+							<div class="uc-incharge-box"><button class="incharge-btn"><a href="{url x="index" r="uc_charge#index"}" >充值</a></botton></div>
+						</div> -->
+					</div>
+<!--end 用户信息部分-->

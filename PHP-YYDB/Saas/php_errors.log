@@ -1,0 +1,3 @@
+[03-Aug-2016 14:55:01 Asia/Shanghai] PHP Notice:  Fanwe::__construct(): not found constant FANWE_ROOT_PATH in /home/1ydb/fanwe/Saas/auth.php on line 26
+[03-Aug-2016 14:55:01 Asia/Shanghai] PHP Notice:  Fanwe::__construct(): not found constant FANWE_ROOT_PATH in /home/1ydb/fanwe/Saas/auth.php on line 111
+[03-Aug-2016 14:55:01 Asia/Shanghai] PHP Fatal error:  Call to undefined method Fanwe::init() in /home/1ydb/fanwe/Saas/auth.php on line 112

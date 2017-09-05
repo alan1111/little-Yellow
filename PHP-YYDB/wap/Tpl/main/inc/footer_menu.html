@@ -1,0 +1,41 @@
+
+<div class="footer-menu-box">
+    <div class="f_menu split-line-top">
+  		<ul class="menu_box">
+  			<li class="menu_item {if $MODULE_NAME eq 'index'}cur{/if}">
+  				<a href="{url r="index" b="index#index"}">
+	  				<p><i class="gcfont">&#xe799;</i></p>
+	  				<p class="item_txt">首页</p>
+  				</a>
+  			</li>
+			<li class="menu_item {if $MODULE_NAME eq 'anno'}cur{/if}">
+				<a href="{url r="index" b="anno#index"}">
+					<p><i class="gcfont">&#xe62e;</i></p>
+					<p class="item_txt">最新揭晓</p>
+				</a>
+			</li>
+  			<li class="menu_item {if $MODULE_NAME eq 'cart'}cur{/if}">
+  				<a href="{url r="index" b="cart#index"}">
+	  				<p style="position:relative;" >
+	  					<i class="gcfont"> &#xe673;<!--  <img src="./wap/Tpl/main/images/index/gwc.png" alt="" style="width: 20px;height: 20px;" /> --></i>
+	  					<div class="nav_cart_num" {if $data.cart_info.cart_item_num gt 0}style="display:block;"{/if}>{$data.cart_info.cart_item_num}</div>
+	  				</p>
+	  				<p class="item_txt">购物车</p>
+	  			</a>
+	  		</li>
+  			<li class="menu_item {if $MODULE_NAME eq 'uc_duobao_record'}cur{/if}">
+  				<a href="{url r="index" b="uc_duobao_record#index"}">
+  					<p><i class="gcfont">&#xe61f;</i></p>
+  					<p class="item_txt">夺宝记录</p>
+  				</a>
+  			</li>
+  			<li class="menu_item {if $MODULE_NAME eq 'user_center'}cur{/if}">
+  				<a href="{url r="index" b="user_center#index"}">
+  					<p><i class="gcfont">&#xe603;</i></p>
+  					<p class="item_txt">我</p>
+  				</a>
+  			</li>
+		</ul>
+		<a href="/o2onew/wap/biz.php?ctl=more"></a>
+	</div>
+</div>

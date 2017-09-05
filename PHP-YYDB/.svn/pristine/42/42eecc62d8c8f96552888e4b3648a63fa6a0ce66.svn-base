@@ -1,0 +1,59 @@
+<div class="clear"></div>
+<div class="footer_box">
+<div class="footer_inner_box">
+
+<div class="{function name="load_wrap" t=$wrap_type} clearfix">
+	<div class="help_row f_l">
+		{foreach from=$deal_help item=help}
+			<span>
+			<dl>
+				<dt>{if $help.iconfont neq ''}<i class="diyfont">{$help.iconfont}</i>&nbsp;{/if}{$help.title}</dt>
+				<dd>
+					<ul>
+						{foreach from=$help.help_list item=help_item}
+						<li><b></b><a href="{url x="index" r="help" p="id=$help_item.id"}">{$help_item.title}</a></li>
+						{/foreach}
+					</ul>
+				</dd>
+			</dl>
+			</span>
+		{/foreach}
+	</div>
+	<div class="g-side-l f_l">
+            <ul class="m-instruction-state f-clear">
+                <li><i class="ico_foot ico-state-l-1"></i>100%公平公正公开</li>
+                <li><i class="ico_foot ico-state-l-2"></i>100%正品保证</li>
+                <li><i class="ico_foot ico-state-l-3"></i>100%权益保障</li>
+            </ul>
+     </div>
+	<div class="foot_logo f_l">
+		<a class="link" href="{$APP_ROOT}/">
+			<img src="./app/Tpl/main/fanwe/images/sccode.png"/>
+		<!--<?php
+			$this->_var['foot_logo_image'] = get_spec_image(app_conf("FOOTER_LOGO"),110,110,1);
+		?>
+		{function name="load_page_png" v=$foot_logo_image}-->
+		</a>
+	</div>
+	<div class="foot_online_time f_l">
+	周一至周六&nbsp;&nbsp;&nbsp;8:30-17:30<br/>
+	全国服务热线&nbsp;&nbsp;&nbsp;400-688-1058
+	</div>
+	<div class="blank"></div>
+
+
+    <center>
+    	<div class="foot_info">
+				<p>&copy;南通谷创电子商务有限公司</p>
+	    </div>
+    </center>
+	
+</div><!--end foot_wrap-->
+</div>
+</div>
+
+<a id="go_top" href="javascript:void(0);"></a>
+</body>
+</html>
+
+	

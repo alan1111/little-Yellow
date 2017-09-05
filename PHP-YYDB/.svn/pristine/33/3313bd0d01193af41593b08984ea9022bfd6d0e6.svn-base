@@ -1,0 +1,15 @@
+{  
+    "settings":  
+    {  
+        "xdebug":  
+        {  
+            "close_on_stop": true,  
+            "path_mapping":  
+            {  
+            },  
+            "port": 10000,  
+            "super_globals": true,  
+            "url": ""  
+        }  
+    }  
+}  

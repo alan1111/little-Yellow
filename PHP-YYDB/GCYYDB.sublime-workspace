@@ -1,0 +1,227 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"view.run_command(\"htmlprettify\")",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/PHP/htdocs/PHP-YYDB"
+	],
+	"file_history":
+	[
+		"/E/PHP/PHPStudy/Class1/o1.php",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/app/Lib/main/update_dataModule.class.php",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/public/db_config.php",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/app/Lib/main/cartModule.class.php",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/admin/Lib/Model/DealOrderItemViewModel.class.php",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/admin/Lib/Action/DealOrderAction.class.php",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/app/Lib/main/home_duobaoModule.class.php",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/app/Lib/main/userModule.class.php",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/admin.php",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/update.sql",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/install/Runtime/Cache/ee657849ab2bb1b4612b1a30ea293b85.php",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/wap/Tpl/main/index.html",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/wap/Tpl/main/inc/header_index_new.html",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/wap/Tpl/main/add_dp.html",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/wap/Tpl/main/share_detail.html",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/wap/Tpl/main/anno.html",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/wap/Tpl/main/uc_account_phone.html",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/wap/index.php",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/安装说明（必看）.url",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/license.php",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/m.php",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/saas_api_client.php",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/saas_api_server.php",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/saas_url_client.php",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/saas_url_server.php",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/admin/index.html",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/app/Lib/insert_libs.php",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/app/Lib/page.php",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/callback/index.html",
+		"/C/Users/Administrator/Desktop/方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀/安装说明.txt"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Users\\Administrator\\Desktop\\方维一元夺宝1.71商业版源码 支持PC端+WAP端+APP端+分销功能+多种支付方式+秒杀",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"localhost",
+			"getAll",
+			"fanwe_",
+			"DB_PREFIX",
+			"secure_connection",
+			"php_mssql.dll",
+			"insert_id",
+			"deal_order",
+			"fanwe_deal_order",
+			"insert_order_item",
+			"fanwe_deal_order",
+			"order_sn",
+			"home_duobaoModule",
+			"fanwe_duobao",
+			"fanwe_schedule_list",
+			"fanwe_fair_fetch",
+			"fanwe_deal_order",
+			"update_dataModule",
+			"update_order_item",
+			"fanwe_deal_order",
+			"FastClick",
+			"中奖",
+			"点击获取验证码",
+			"header-wrapper close"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 162.0
+	},
+	"pinned_build_system": "",
+	"project": "GCYYDB.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 369.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

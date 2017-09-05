@@ -1,0 +1,25 @@
+{// 引入标签库 }
+<tagLib name="html" />
+<include file="Public:header" />
+<load href='__TMPL__Common/js/jquery.bgiframe.js' />
+<load href='__TMPL__Common/js/jquery.weebox.js' />
+<load href='__TMPL__Common/js/script.js' />
+<load href='__TMPL__Common/js/user.js' />
+<load href='__TMPL__Common/style/weebox.css' />
+
+<div class="main">
+	<div class="blank5"></div>
+
+	<form method="post" action="__APP__" enctype="multipart/form-data">
+		<input type="file" name="file_stu" />
+		<input type="submit" value="导入" />
+		<p style="margin-top:10%;">
+			<b>注意：</b><br/>
+			&nbsp;&nbsp;请将用户头像图片放到站点根目录下的特定位置,如:“../admin/public/robot” 路径下;否则默认无头像。<br/>
+		</p>
+		<input type="hidden" value="User" name="m" />
+		<input type="hidden" value="modify_batch_add" name="a" />
+	</form>
+
+
+</div>
