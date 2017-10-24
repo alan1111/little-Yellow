@@ -7,6 +7,7 @@
 // | Author: Ant（594177881@qq.com）
 // +----------------------------------------------------------------------\
 define("FILE_PATH",""); //文件目录，空为根目录
+echo "correct";
 require_once './system/system_init.php';
 $sess_id = strim($_REQUEST['sess_id']);
 if($sess_id)
